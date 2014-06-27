@@ -1,27 +1,15 @@
-== README
+== Sample Rails store app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is has a product listing page ,a sign up process is shortly come . More features to come
+
+soon !
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version :1.9.3p545
 
-* System dependencies
+* System dependencies : bcrypt,bootstap.css
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
