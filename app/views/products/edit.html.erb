@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<% content_for :navbar_options do %>
+<li><%= link_to 'Home',root_path %></li>
+<li><%= link_to 'Back', products_path %></li>
+<% end %>

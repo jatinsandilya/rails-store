@@ -1,6 +1,11 @@
-<h1>Listing products</h1>
+<% if notice%>
+<div class = 'alert alert-success'><%= notice %></div>
+<%end%>
 
-<table>
+
+<h2 class='well' >Listing products here ...</h2>
+
+<table class = 'table table-hover'>
   <thead>
     <tr>
       <th>Title</th>
@@ -17,7 +22,7 @@
         <td><%= product.title %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency(product.price,unit: 'Rs.') %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -28,4 +33,8 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<% content_for :navbar_options do %>
+<li><%= link_to 'Home',root_path %></li>
+<li><%= link_to 'Add Product', new_product_path %></li>
+
+<% end %>

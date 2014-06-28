@@ -1,0 +1,5 @@
+<h1>Welcome to my web-app</h1>
+<footer>Go to our <%=link_to 'Products',products_path %> to see our amazing collection !</footer>
+<% content_for :navbar_options do %>
+  <li><%= link_to 'Products',products_path %></li>
+<%end%>
