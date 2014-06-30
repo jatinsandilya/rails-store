@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+5.times do 
+  products = Product.create(title: 'eloquent-ruby',description: 'random text',image_url:'er',price:0.00)
+end
