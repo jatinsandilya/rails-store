@@ -1,10 +1,10 @@
 == Sample Rails store app
 
-This app is has a product listing page ,a sign up process is shortly come . More features to come
+This app is has a product listing page. More features to come
 
 soon !
 
-Things you may want to cover:
+Details:
 
 * Ruby version :1.9.3p545
 
