@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
+
+  # get 'users/login'
+  get 'users/signup'
+  get 'users/signin'
+  post 'users/signup' =>'users#create'
+  post 'users/login' =>'users#login'
   resources :products
   root to: 'welcome#index'
 
+  
+
+  
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

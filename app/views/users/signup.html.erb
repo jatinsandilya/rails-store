@@ -1,0 +1,39 @@
+
+
+<%=form_for @user,url:{action:'create'}  do |f| %>
+<% if @user.errors.any? %>
+  <h4 class="alert alert-danger well">Sorry! <%= params[:user]%>
+  <%= pluralize(@user.errors.count, "error") %>
+  occured:
+  </h5>
+
+
+<ul>
+  <% @user.errors.full_messages.each do |msg| %>
+  <li><%=msg%></li>
+  <%end%>
+</ul>
+<%end%>
+
+  <div class="form-signin myform">
+  <span >
+  <%= f.label :Username %>
+  <%= f.text_field :user_name,class:'form-control',autocomplete:'off' %>
+  </span> 
+  <span>
+    <%= f.label :password %>
+  <%= f.password_field :password,class:'form-control' %>
+  </span>
+  <span>
+    <%= f.label 'Confirm your password:' %>
+  <%= f.password_field :password_confirmation,class:'form-control' %>
+  </span>
+  <span>
+    <%= f.submit 'Register',class:'btn btn-primary ' %>
+  </div>
+  </span>
+  
+
+
+ <%end%> 
+ 

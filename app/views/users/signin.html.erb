@@ -1,0 +1,19 @@
+<%=form_tag controller:'users',action:'login',method:'post',class:'form-signin'  do |f| %>
+
+
+<div class="myform">
+  <div class =''>
+   <%= label_tag :username,'Enter your username:' %>
+   <p class="" ><%= text_field_tag :user_name,'',html:{class:'form-control'} %></p>
+  </div> 
+  <div>
+    <%= label_tag :password,'Enter your password' %>
+    <%= password_field_tag :password,'',html:{class:'form-control'} %>
+  </div>
+  <div>
+    <%= submit_tag 'Login',class:'btn btn-success ' %>
+  </div>
+  
+</div>
+
+ <%end%> 

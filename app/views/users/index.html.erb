@@ -1,0 +1,31 @@
+<% if notice%>
+<div class = 'alert alert-success'><%= notice %></div>
+<%end%>
+
+
+<h2 class='well' >All registered users here ...</h2>
+
+<table class = 'table table-hover'>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>User-id</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.user_name %></td>
+        <td><%= user.id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% content_for :navbar_options do %>
+<li><%= link_to 'Home',root_path %></li>
+
+<% end %>

@@ -1,0 +1,9 @@
+<%if flash[:notice] %>
+<div class="alert alert-success">
+	<%= flash[:notice]%>
+</div>
+<%end%>
+<footer>Continue to our <%=link_to 'Products',products_path %>!</footer>
+<% content_for :navbar_options do %>
+  <li><%= link_to 'Products',products_path %></li>
+<%end%>
